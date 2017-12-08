@@ -1,8 +1,7 @@
 $(document).ready(function() {
 	//name of the page we are on
-	var path = window.location.pathname;
-	var page = path.split("/").pop();
-// 	console.log(page);
+	var page = $('html').attr('title');
+	console.log(page);
 
 	//check if request for quote section is currently being displayed.
 	var requestQuoteVisible = false;
