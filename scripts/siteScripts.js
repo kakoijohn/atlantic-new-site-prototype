@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	//name of the page we are on
-	var page = $('html').attr('title');
+	var page = $('title').attr('title');
 	console.log(page);
 
 	//check if request for quote section is currently being displayed.

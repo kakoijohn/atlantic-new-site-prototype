@@ -2,7 +2,7 @@ var flickrApiData;
 
 function jsonFlickrApi(data) {
 	flickrApiData = data;
-	console.log("called");
+// 	console.log("called");
 }
 
 $(document).ready(function() {
@@ -29,7 +29,7 @@ $(document).ready(function() {
 		//once the images have loaded, make sure they are vertically centered.
 		$('.gallery-image').on('load', function() {
 			$('.gallery-image').each(function() {
-				console.log((120 - $(this).height() / 2));
+// 				console.log((120 - $(this).height() / 2));
 				$(this).css('margin-top', (120 - $(this).height() / 2));
 			});
 		});
