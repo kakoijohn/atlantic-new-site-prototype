@@ -1,0 +1,294 @@
+/* CSS Document */
+
+
+.big-picture-banner {
+	z-index: -10;
+  	
+	min-height: 400px;
+  	margin-top: -5px;
+  	padding: 0 0 0;
+  	overflow: hidden;
+  	position:absolute;
+  	
+  	width: 100%;
+  	height: 100%;
+}
+
+.banner-text {
+	z-index: 1;
+	position:fixed;
+	
+  	width: 50%;
+  	height: 25%;
+	
+	top: 40%;
+  	margin-left: 25%;
+  	margin-right: 25%;
+  	
+  	text-align: right;
+  	
+  	font-weight:lighter;
+  	font-size:150%;
+	color: white;
+	
+/*   	background: rgba(0, 0, 0, 0.1); */
+}
+
+.banner-text h1 {
+	transition: all .5s ease;
+
+	padding:15px;
+	border-right: solid;
+	border-bottom: solid;
+  	border-color: white;
+  	border-width: 8px;
+  	color: white;
+}
+
+.banner-text h1:hover {
+	background-color: #4671D5;
+	border-radius: 20px;
+}
+
+.banner-WOB-logo {
+	transition: all .5s ease;
+
+	z-index: 1;
+	width: 15%;
+
+	position: fixed;
+	right: 3px;
+	bottom: 3px;
+
+	border-color: #231f20 !important;
+	border-width: 3px;
+	border-right: solid;
+	border-bottom: solid;
+}
+
+.banner-WOB-logo img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.banner-WOB-logo:hover {
+	background-color: white;
+	border-radius: 15px;
+}
+
+.clear-banner-window {
+	background: transparent;
+	min-height: 300px;
+	height: 100%;
+}
+
+.second-section {
+    background: url(../images/header/hr_down.png) center bottom no-repeat;
+    background-color: #547aa2;
+}
+
+.section-column-container {
+	width: 100%;
+
+	margin: 0 auto;
+	padding: 30px;
+
+	display: inline-block;
+/* 	float: left; */
+}
+
+.section-column {
+/* 	display: inline-block; */
+	float: left;
+	width: 32%;
+/*     padding-left: 15px; */
+/*     padding-right: 15px; */
+
+	margin: 5px;
+
+    vertical-align: top;
+}
+
+.section-column h2 {
+	border-right: solid;
+	border-bottom: solid;
+  	border-color: white;
+  	border-width: 3px;
+
+	font-size: 20px;
+	font-weight: 200;
+	letter-spacing: 0%;
+	color: white;
+	padding: 5px;
+
+	text-align: right;
+}
+
+.section-column section {
+	color: white;
+}
+
+.section-column li {
+	color: white;
+	font-size: 1rem;
+	font-weight: 100;
+}
+
+.bloc {
+	position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.section-3-picture-container {
+	-moz-transition: all 0.5s ease;
+  	-webkit-transition: all 0.5s ease;
+  	transition: all 0.5s ease;
+
+	position: relative;
+	float: left;
+	overflow: hidden;
+	height: 300px;
+	width: 33%;
+
+	min-height: 440px;
+	min-width: 300px;
+
+	margin: 1px;
+}
+
+.section-3-picture-container-child {
+	height: 100%;
+	width: 100%;
+
+	-moz-transition: all 0.5s ease;
+  	-webkit-transition: all 0.5s ease;
+  	transition: all 0.5s ease;
+
+	background-size: cover;
+    background-position: center center;
+	background-color: white;
+}
+
+.section-3-picture-container.hovered {
+	border-radius: 20px;
+}
+
+.section-3-picture-container-child.hovered {
+	-moz-transform: scale(1.1);
+  	-webkit-transform: scale(1.1);
+  	transform: scale(1.1);
+
+  	-webkit-filter: blur(2px);
+  	-moz-filter: blur(2px);
+  	-o-filter: blur(2px);
+  	-ms-filter: blur(2px);
+  	filter: blur(2px);
+}
+
+.section-3-picture-container h1.hovered {
+	background-color: #4671D5;
+	border-radius: 20px;
+}
+
+.section-3-picture-container h1 {
+	-moz-transition: all 0.5s ease;
+  	-webkit-transition: all 0.5s ease;
+  	transition: all 0.5s ease;
+	
+	position: absolute;
+    bottom: 15%;
+    left: 5%;
+    width: 90%;
+    height: auto;
+    margin: auto;
+
+	padding:15px;
+	border-right: solid;
+	border-bottom: solid;
+  	border-color: white;
+  	border-width: 8px;
+  	color: white;
+
+  	text-align: right;
+}
+
+.section-3-picture-container-read-more {
+	-moz-transition: all 0.5s ease;
+  	-webkit-transition: all 0.5s ease;
+  	transition: all 0.5s ease;
+
+	position: absolute;
+
+    bottom: -10%;
+    left: 36%;
+    
+    height: auto;
+    margin: auto;
+
+    padding: 10px;
+    
+    color: #345182;
+  	background-color: white;
+
+  	text-align: right;
+}
+
+.section-3-picture-container-read-more.hovered {
+	bottom: 3.5%;
+}
+
+section {
+	margin: 0;
+    padding: 0;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+#content-wrap {
+  	transition: 0.3s opacity ease;
+}
+
+.footer {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+
+	background: url(../images/header/hr_down.png) center bottom no-repeat;
+	background-color: grey;
+
+	text-align: center;
+	color: white;
+	font-size: 0.8rem;
+	font-weight: 100;
+	line-height: 150%;
+}
+
+.footer ul {
+	list-style: none;
+    margin: 0;
+    vertical-align: top;
+	display: inline-block;
+}
+
+.footer ul li {
+	float: left;
+	border-right: 2px solid #ccc;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.footer ul li:last-child {
+    border: none;
+}
+
+.footer a {
+	color: white;
+	text-decoration: underline;
+}

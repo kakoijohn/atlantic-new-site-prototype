@@ -1,0 +1,135 @@
+.banner-text h1 {
+    z-index: 20;
+
+    position: absolute;
+
+    left: 20%;
+    width: 60%;
+
+    margin-top: 8%;
+
+	padding:15px;
+
+    text-align: right;
+    color: white;
+
+	border-right: solid;
+	border-bottom: solid;
+  	border-color: white;
+  	border-width: 8px;
+}
+
+.big-picture-banner video {
+	width: 100%;
+	position: fixed;
+	margin-top: -900px;
+
+	-webkit-filter: blur(5px);
+  	-moz-filter: blur(5px);
+  	-o-filter: blur(5px);
+  	-ms-filter: blur(5px);
+  	filter: blur(5px);
+
+  	-moz-transition: all 3s ease;
+  	-webkit-transition: all 3s ease;
+  	transition: all 3s ease;
+}
+
+.watch-video {
+	transition: all .5s ease;
+
+	z-index: 1;
+	width: 12%;
+
+	position: fixed;
+	right: 3px;
+	bottom: 3px;
+
+	border-color: white !important;
+	border-width: 3px;
+	border-right: solid;
+	border-bottom: solid;
+}
+
+.watch-video:hover {
+	background-color: black;
+	border-radius: 15px;
+}
+
+.watch-video h2 {
+	text-align: right;
+	color: white;
+	margin: 10px;
+}
+
+.heading-content {
+	background-color: #ffffffd1;
+}
+
+.content-tab-menu {
+	width: 100%;
+	padding-bottom: 500px;
+
+	background-color: white;
+}
+
+.content-tab-menu .line {
+	width: 100%;
+	position: absolute;
+	border-bottom: solid;
+}
+
+.content-tab-menu ul {
+  	display: table;
+  	width: 100%;
+
+	background-color: white;
+
+	padding-left: 0;
+	margin: 0;
+}
+
+.content-tab-menu ul li {
+	display: table-cell;
+	
+	width: 30px;
+
+	padding: 30px;
+
+	text-align: center;
+	font-size: 150%;
+}
+
+.content-tab-menu ul li a {
+	-moz-transition: all 1.0s ease;
+  	-webkit-transition: all 1.0s ease;
+  	transition: all 1.0s ease;
+
+	padding: 5px;
+
+	border-bottom: solid;
+	border-right:solid;
+	border-color: transparent;
+	border-width: 4px;
+
+	font-weight:bold;
+}
+
+.content-tab-menu ul li:last-child a {
+	color: #345182;
+	border-color: #345182;
+}
+
+.content-tab-menu .two-block-content {
+	-moz-transition: all 1.0s ease;
+  	-webkit-transition: all 1.0s ease;
+  	transition: all 1.0s ease;
+
+	padding: 30px;
+	margin-left: 0.5%;
+	width: 99%;
+
+/* 	display: none; */
+
+	position: absolute;
+}

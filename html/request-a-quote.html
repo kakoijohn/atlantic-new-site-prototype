@@ -1,0 +1,89 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+    
+    <style type="text/css"></style>
+    <link rel="stylesheet" type="text/css" href="../css/requestAQuote.css">
+    <link rel="stylesheet" type="text/css" href="../css/indexStyle.css">
+	<link rel="stylesheet" type="text/css" href="../css/indexBody.css">
+	<link rel="stylesheet" type="text/css" href="../css/contentStyle.css">
+
+    <link rel="shortcut icon" href="../images/ANTFavicon.ico">
+
+    <title>Request A Quote</title>
+
+	<script src="../scripts/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    
+    <script>
+        $(document).ready(function() {
+            //disable submit button
+			document.getElementById("submit-request-button").disabled = true;
+
+			//enable submit button from captcha response
+			function enableBtn(){
+				document.getElementById("submit-request-button").disabled = false;
+				console.log("Button Enabled.");
+			}
+
+			$(window).resize(function() {
+				console.log("resized");
+				console.log($(window).width());
+				console.log($(window).height());
+			});
+
+			
+		});
+    </script>
+</head>
+
+<body>
+    <div class="request-a-quote">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSehARPngLrNarGDGtLrkhC7lKZ15aR7CfG9hcHcdBoeVb8xMg/formResponse">
+            <h1>Request a Quote</h1>	
+            <div class="input-section" style="display:table;">
+                <label for="name">Name</label>
+                <br>
+                <div style="float:left;padding-right:20px;">
+                    <input name="entry.364496949" type="text" id="first-name"/>
+                    <p>First Name<em>*</em></p>
+                </div>
+
+                <div style="float:left;">
+                    <input name="entry.52046787" type="text" id="last-name"/>
+                    <p>Last Name</p>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <label for="company">Company</label>
+                <br>
+                <input name="entry.1615889907" type="text" id="company"/>
+            </div>
+
+            <div class="input-section">
+                <label for="phone">Phone Number</label>
+                <br>
+                <input name="entry.707442693" type="text" id="phone"/>
+            </div>
+
+            <div class="input-section">
+                <label for="email">Email<em>*</em></label>
+                <br>
+                <input name="entry.1208575332" type="text" id="email"/>
+            </div>
+
+            <div class="input-section">
+                <label for="description-of-task">Brief Description of Task<em>*</em></label>
+                <br>
+                <textarea name="entry.776142482" type="text" id="description-of-task"></textarea>
+            </div>
+
+            <br>
+            <div class="g-recaptcha" data-sitekey="6LcdoS4UAAAAAKdB0ZQPKwtGa4neCvthE1gE8klC" data-callback="enableBtn"></div>
+            <br>
+            <input class="button" id="submit-request-button" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
