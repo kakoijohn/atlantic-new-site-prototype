@@ -8,9 +8,10 @@ html, body {
 
 .request-a-quote {
 	width: 100%;
-	padding: 150px;
 	padding-top: 50px;
 	padding-bottom: 50px;
+
+	margin: auto;
 
 	background: url(../images/header/hr_down.png) center bottom no-repeat;
 	background-color: lightblue;
