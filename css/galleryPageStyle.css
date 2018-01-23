@@ -42,7 +42,7 @@
 
 .image-gallery .three-picture-section .single-image .gallery-image:hover {
 	border-radius: 30px;
-	cursor: -webkit-zoom-in;
+	cursor: zoom-in;
 }
 
 .image-fullscreen {
@@ -142,4 +142,14 @@
 .image-fullscreen .right-arrow:hover {
 	background-color: #4671D5;
 	cursor: pointer;
+}
+
+#grey-area {
+	background-color: transparent;
+	
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: -1;
 }

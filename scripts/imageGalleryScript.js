@@ -57,9 +57,16 @@ $(document).ready(function() {
 // 			console.log(source);
 	
 			$('.image-fullscreen .inner-screen').attr("src", source);
+			//set the cursor to the loading ball while the image is loading
+			$('body').css('cursor', 'progress');
+			$('.image-gallery .three-picture-section .single-image .gallery-image:hover').css('cursor', 'progress');
 	
 			//wait until our fullscreen image has loaded.
 			$('.image-fullscreen .inner-screen').on('load', function() {
+				//set the cursor back to default.
+				$('body').css('cursor', '');
+				$('.image-gallery .three-picture-section .single-image .gallery-image:hover').css('cursor', 'zoom-in');
+
 				$('.image-fullscreen').css('opacity', 1);
 				$('.image-fullscreen').css('z-index', 10);
 				imageFullscreenVisible = true;
@@ -119,7 +126,16 @@ $(document).ready(function() {
 			$('.image-fullscreen').css('z-index', -10);
 			imageFullscreenVisible = false;
 		});
-	
+
+		//if the grey area is clicked, get out of fullscreen
+		$('#grey-area').click(function() {
+			if (imageFullscreenVisible == true) {
+				$('.image-fullscreen').css('opacity', 0);
+				$('.image-fullscreen').css('z-index', -10);
+				imageFullscreenVisible = false;
+			}
+		});
+		
 	
 		$('.image-fullscreen .inner-screen').hover(function() {
 			$('.exit-button a').css('opacity', 1);
