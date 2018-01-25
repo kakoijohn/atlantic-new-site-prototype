@@ -269,6 +269,80 @@
 	bottom: 3.5%;
 }
 
+.section-3-tetris-container {
+	display: table;
+/* 	float: left; */
+/* 	overflow: hidden; */
+	height: 700px;
+	width: 70%;
+
+	min-height: 440px;
+	min-width: 300px;
+
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.tetris-left-right {
+	height: 100%;
+	width: 50%;
+
+	display: inline-block;
+}
+
+.tetris-right-1 {
+	height: 50%;
+	width: 100%;
+}
+
+.tetris-right-2 {
+	height: 50%;
+	width: 100%;
+}
+
+.tetris-image {
+	transition: all 0.5s ease;
+
+	position: relative;
+
+	height: 100%;
+	width: 100%;
+
+	background-size: cover;
+    background-position: center top;
+	background-color: white;
+}
+
+.tetris-image:hover {
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.tetris-image h2 {
+	transition: all 0.5s ease;
+	
+	position: absolute;
+    bottom: 30px;
+    left: 5%;
+    width: 90%;
+    height: auto;
+    margin: auto;
+
+	padding:15px;
+	border-right: solid;
+	border-bottom: solid;
+  	border-color: white;
+  	border-width: 5px;
+  	color: white;
+
+  	text-align: right;
+}
+
+.tetris-image h2.hovered {
+	background-color: #bb362d;
+	border-radius: 18px;
+}
+
 section {
 	margin: 0;
     padding: 0;

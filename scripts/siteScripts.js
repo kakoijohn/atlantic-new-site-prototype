@@ -166,6 +166,16 @@ $(document).ready(function() {
 		$("#3-pic-container-3-2").toggleClass("hovered");
 		$("#3-pic-container-3-3").toggleClass("hovered");
 	});
+
+	$('#tetris-left').hover(function() {
+		$('#tetris-left h2').toggleClass("hovered");
+	});
+	$('#tetris-right-1').hover(function() {
+		$('#tetris-right-1 h2').toggleClass("hovered");
+	});
+	$('#tetris-right-2').hover(function() {
+		$('#tetris-right-2 h2').toggleClass("hovered");
+	});
 	
 	/* var xDocMid = docHeight / 2;
 	var yDocMid = docWidth / 2;
@@ -204,46 +214,55 @@ $(document).ready(function() {
 	});
 
 	function toggleTimeline(id) {
+		$('#content-2010').css('visibility', 'hidden');
 		$('#content-2010').css('opacity', '0');
 		$('#content-2010').css('z-index', '-1');
 		$('#timeline-2010').css('background-image', 'url(../images/about/TimelineLine1.png)');
 		$('#timeline-2010').css('color', 'grey');
 
+		$('#content-2011').css('visibility', 'hidden');
 		$('#content-2011').css('opacity', '0');
 		$('#content-2011').css('z-index', '-1');
 		$('#timeline-2011').css('background-image', 'url(../images/about/TimelineLine1.png)');
 		$('#timeline-2011').css('color', 'grey');
 
+		$('#content-2012').css('visibility', 'hidden');
 		$('#content-2012').css('opacity', '0');
 		$('#content-2012').css('z-index', '-1');
 		$('#timeline-2012').css('background-image', 'url(../images/about/TimelineLine1.png)');
 		$('#timeline-2012').css('color', 'grey');
 
+		$('#content-2013').css('visibility', 'hidden');
 		$('#content-2013').css('opacity', '0');
 		$('#content-2013').css('z-index', '-1');
 		$('#timeline-2013').css('background-image', 'url(../images/about/TimelineLine1.png)');
 		$('#timeline-2013').css('color', 'grey');
 
+		$('#content-2014').css('visibility', 'hidden');
 		$('#content-2014').css('opacity', '0');
 		$('#content-2014').css('z-index', '-1');
 		$('#timeline-2014').css('background-image', 'url(../images/about/TimelineLine1.png)');
 		$('#timeline-2014').css('color', 'grey');
 		
+		$('#content-2015').css('visibility', 'hidden');
 		$('#content-2015').css('opacity', '0');
 		$('#content-2015').css('z-index', '-1');
 		$('#timeline-2015').css('background-image', 'url(../images/about/TimelineLine1.png)');
 		$('#timeline-2015').css('color', 'grey');
 
+		$('#content-2016').css('visibility', 'hidden');
 		$('#content-2016').css('opacity', '0');
 		$('#content-2016').css('z-index', '-1');
 		$('#timeline-2016').css('background-image', 'url(../images/about/TimelineLine1.png)');
 		$('#timeline-2016').css('color', 'grey');
 
+		$('#content-2017').css('visibility', 'hidden');
 		$('#content-2017').css('opacity', '0');
 		$('#content-2017').css('z-index', '-1');
 		$('#timeline-2017').css('background-image', 'url(../images/about/TimelineLine1.png)');
 		$('#timeline-2017').css('color', 'grey');
 
+		$('#content-' + id).css('visibility', 'visible');
 		$('#content-' + id).css('opacity', '1');
 		$('#content-' + id).css('z-index', '10');
 		$('#timeline-' + id).css('background-image', 'url(../images/about/TimelineLine2.png)');
@@ -266,26 +285,31 @@ $(document).ready(function() {
 
 	function togglePigTab(id) {
 		$('#poly-pig-content').css('opacity', '0');
+		$('#poly-pig-content').css('visibility', 'hidden');
 		$('#poly-pig-content').css('z-index', '-1');
 		$('#poly-pig-tab a').css('color', '#4671D5');
 		$('#poly-pig-tab a').css('border-color', 'transparent');
 
 		$('#gauge-pig-content').css('opacity', '0');
+		$('#gauge-pig-content').css('visibility', 'hidden');
 		$('#gauge-pig-content').css('z-index', '-1');
 		$('#gauge-pig-tab a').css('color', '#4671D5');
 		$('#gauge-pig-tab a').css('border-color', 'transparent');
 
 		$('#brush-pig-content').css('opacity', '0');
+		$('#brush-pig-content').css('visibility', 'hidden');
 		$('#brush-pig-content').css('z-index', '-1');
 		$('#brush-pig-tab a').css('color', '#4671D5');
 		$('#brush-pig-tab a').css('border-color', 'transparent');
 
 		$('#smart-pig-content').css('opacity', '0');
+		$('#smart-pig-content').css('visibility', 'hidden');
 		$('#smart-pig-content').css('z-index', '-1');
 		$('#smart-pig-tab a').css('color', '#4671D5');
 		$('#smart-pig-tab a').css('border-color', 'transparent');
 
 		$(id + '-content').css('opacity', '1');
+		$(id + '-content').css('visibility', 'visible');
 		$(id + '-content').css('z-index', '10');
 		$(id + '-tab a').css('color', '#345182');
 		$(id + '-tab a').css('border-right', 'solid');
@@ -321,6 +345,12 @@ $(document).ready(function() {
 	$('#request-quote-exit').click(function() {
 		$('.request-quote-screen').css('left', $(window).width());
 		requestQuoteVisible = false;
+	});
+	$('.request-quote-screen').click(function() {
+		if (requestQuoteVisible == true) {
+			$('.request-quote-screen').css('left', $(window).width());
+			requestQuoteVisible = false;
+		}
 	});
 
 	$(window).load(function() {

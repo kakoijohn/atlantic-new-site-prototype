@@ -50,13 +50,15 @@ $(document).ready(function() {
 		var currentSourceID;
 		$('.gallery-image').click(function() {
 			var source = $(this).attr("src");
-			source = source.substring(0, source.length - 5) + "h.jpg";
+			source = source.substring(0, source.length - 5) + "b.jpg";
 			
 			currentSourceID = $(this).attr("id");
 	
 // 			console.log(source);
 	
+			//load the image
 			$('.image-fullscreen .inner-screen').attr("src", source);
+
 			//set the cursor to the loading ball while the image is loading
 			$('body').css('cursor', 'progress');
 			$('.image-gallery .three-picture-section .single-image .gallery-image:hover').css('cursor', 'progress');
@@ -81,14 +83,23 @@ $(document).ready(function() {
 			if (currIDNum < numPhotos - 1) {
 				var nextID = "#photo_" + (parseInt(currIDNum) + 1);
 				var nextSource = $(nextID).attr("src");
-				nextSource = nextSource.substring(0, nextSource.length - 5) + "h.jpg";
+				nextSource = nextSource.substring(0, nextSource.length - 5) + "b.jpg";
 	
 				currentSourceID = $(nextID).attr("id");
 	
+				//load the next image
 				$('.image-fullscreen .inner-screen').attr("src", nextSource);
+
+				//set the cursor to the loading ball while the image is loading
+				$('body').css('cursor', 'progress');
+				$('.right-arrow:hover').css('cursor', 'progress');
 	
 				//wait until our fullscreen image has loaded.
 				$('.image-fullscreen .inner-screen').on('load', function() {
+					//set the cursor back to default. 
+					$('body').css('cursor', '');
+					$('.right-arrow:hover').css('cursor', 'pointer');
+
 					$('.image-fullscreen').css('opacity', 1);
 					$('.image-fullscreen').css('z-index', 10);
 					imageFullscreenVisible = true;
@@ -104,14 +115,23 @@ $(document).ready(function() {
 			if (currIDNum > 0) {
 				var prevID = "#photo_" + (parseInt(currIDNum) - 1);
 				var prevSource = $(prevID).attr("src");
-				prevSource = prevSource.substring(0, prevSource.length - 5) + "h.jpg";
+				prevSource = prevSource.substring(0, prevSource.length - 5) + "b.jpg";
 		
 				currentSourceID = $(prevID).attr("id");
 					
+				//load the previous image
 				$('.image-fullscreen .inner-screen').attr("src", prevSource);
+
+				//set the cursor to the loading ball while the image is loading
+				$('body').css('cursor', 'progress');
+				$('.left-arrow:hover').css('cursor', 'progress');
 	
 				//wait until our fullscreen image has loaded.
 				$('.image-fullscreen .inner-screen').on('load', function() {
+					//set the cursor back to default. 
+					$('body').css('cursor', '');
+					$('.left-arrow:hover').css('cursor', 'pointer');
+					
 					$('.image-fullscreen').css('opacity', 1);
 					$('.image-fullscreen').css('z-index', 10);
 					imageFullscreenVisible = true;
