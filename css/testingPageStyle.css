@@ -67,6 +67,10 @@
 	background-color: transparent;
 }
 
+.full-window-graphic ul li:first-child h2 {
+	background-color: #cedbed;
+}
+
 .full-window-graphic ul li h2:hover {
 	border-radius: 10px;
 	background-color: #e5ebf3 !important;

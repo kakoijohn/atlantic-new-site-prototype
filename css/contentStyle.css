@@ -382,12 +382,14 @@ iframe {
 	image-rendering: pixelated;
 }
 
-.timeline ul li:last-child {
+.timeline ul li:first-child {
 	color: red;
 	background-image: url(../images/about/TimelineLine2.png);
 }
 
 .timeline .two-block-content {
+	visibility: hidden;
+
 	-moz-transition: all 1.0s ease;
   	-webkit-transition: all 1.0s ease;
   	transition: all 1.0s ease;

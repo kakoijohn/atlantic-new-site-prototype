@@ -1,0 +1,23 @@
+.two-block-text {
+	margin: 0 auto;
+	padding: 0;
+
+	width: 100%;
+
+	display: table;
+}
+
+.two-block-text .block {
+	width: 50%;
+
+	padding-left: 15%;
+/* 	padding-right: 15%; */
+
+	display: inline-table;
+	line-height: 120%;
+}
+
+.two-block-text .block p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
