@@ -122,6 +122,15 @@
 	font-size: medium;
 }
 
+.tertiary-heading ul {
+	margin-left: 40px;
+}
+
+.tertiary-heading ul li {
+	padding: 0;
+	margin: auto;
+}
+
 .heading-content {
 	width: 100%;
 	padding: 20px;
@@ -330,7 +339,7 @@
 
 iframe {
 	width: 100%;
-	height: 972px;
+	height: 894px;
 	
 	margin:0;
 	padding:0;

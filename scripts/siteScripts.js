@@ -188,9 +188,6 @@ $(document).ready(function() {
 	}); */
 
 	//Timeline toggles
-	$('#timeline-2010').hover(function() {
-		toggleTimeline('2010');
-	});
 	$('#timeline-2011').hover(function() {
 		toggleTimeline('2011');
 	});
@@ -214,12 +211,6 @@ $(document).ready(function() {
 	});
 
 	function toggleTimeline(id) {
-		$('#content-2010').css('visibility', 'hidden');
-		$('#content-2010').css('opacity', '0');
-		$('#content-2010').css('z-index', '-1');
-		$('#timeline-2010').css('background-image', 'url(../images/about/TimelineLine1.png)');
-		$('#timeline-2010').css('color', 'grey');
-
 		$('#content-2011').css('visibility', 'hidden');
 		$('#content-2011').css('opacity', '0');
 		$('#content-2011').css('z-index', '-1');
