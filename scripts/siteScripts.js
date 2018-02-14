@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	//name of the page we are on
 	var page = $('title').attr('title');
-	console.log(page);
+// 	console.log(page);
 
 	//check if request for quote section is currently being displayed.
 	var requestQuoteVisible = false;
