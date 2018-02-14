@@ -89,7 +89,8 @@
 
 .full-window-graphic .graphic .image {
 	margin: auto;
-	float: right;
+	float: left;
+	margin-left: 20%;
 	max-height: 90%;
 	max-width: 80%;
 }

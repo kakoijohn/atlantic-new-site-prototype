@@ -344,38 +344,6 @@ $(document).ready(function() {
 		}
 	});
 
-	$(window).load(function() {
-		//position the dots in the correct place
-		if (page == 'testing.html') {
-			//cryo nitrogen dots
-			$('#cryo-control-cab-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .43);
-			$('#cryo-control-cab-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .62);
-
-			$('#cryo-tank-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .25);
-			$('#cryo-tank-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .85);
-		
-			$('#cryo-engine-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .60);
-			$('#cryo-engine-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .45);
-
-			//membrane nitrogen dots
-		}
-	});
-
-	$(window).resize(function() {
-		if (page == 'testing.html') {
-			//cryo nitrogen dots
-			$('#cryo-control-cab-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .43);
-			$('#cryo-control-cab-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .62);
-
-			$('#cryo-tank-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .25);
-			$('#cryo-tank-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .85);
-		
-			$('#cryo-engine-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .60);
-			$('#cryo-engine-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .45);
-
-			//membrane nitrogen dots
-		}
-	});
 
 	//Cryo and Membrane tab toggles
 	$('#membrane-button').click(function() {
@@ -399,7 +367,74 @@ $(document).ready(function() {
 		$(id + '-button h2').css('background-color', '#cedbed');
 	}
 
-	//Cryo Nitrogen tab toggles
+	$(window).load(function() {
+		//position the dots in the correct place
+		if (page == 'testing.html') {
+			//cryo nitrogen dots
+			$('#cryo-control-cab-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .43);
+			$('#cryo-control-cab-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .62);
+
+			$('#cryo-tank-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .25);
+			$('#cryo-tank-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .85);
+		
+			$('#cryo-engine-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .60);
+			$('#cryo-engine-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .45);
+
+			//membrane nitrogen dots
+			$('#memb-control-cab-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .50);
+			$('#memb-control-cab-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .45);
+
+			$('#memb-tank-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .60);
+			$('#memb-tank-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .67);
+		
+			$('#memb-engine-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .48);
+			$('#memb-engine-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .54);
+
+			$('#memb-filter-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .36);
+			$('#memb-filter-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .75);
+
+			$('#memb-booster-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .45);
+			$('#memb-booster-dot').css('left', $('.full-window-graphic .graphic .image img').width() * 1.03);
+
+			$('#memb-deck-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .72);
+			$('#memb-deck-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .79);
+		}
+	});
+
+	$(window).resize(function() {
+		if (page == 'testing.html') {
+			//cryo nitrogen dots
+			$('#cryo-control-cab-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .43);
+			$('#cryo-control-cab-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .62);
+
+			$('#cryo-tank-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .25);
+			$('#cryo-tank-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .85);
+		
+			$('#cryo-engine-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .60);
+			$('#cryo-engine-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .45);
+
+			//membrane nitrogen dots
+			$('#memb-control-cab-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .50);
+			$('#memb-control-cab-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .45);
+
+			$('#memb-tank-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .60);
+			$('#memb-tank-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .67);
+		
+			$('#memb-engine-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .48);
+			$('#memb-engine-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .54);
+
+			$('#memb-filter-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .36);
+			$('#memb-filter-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .75);
+
+			$('#memb-booster-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .45);
+			$('#memb-booster-dot').css('left', $('.full-window-graphic .graphic .image img').width() * 1.03);
+
+			$('#memb-deck-dot').css('top', $('.full-window-graphic .graphic .image img').height() * .72);
+			$('#memb-deck-dot').css('left', $('.full-window-graphic .graphic .image img').width() * .79);
+		}
+	});
+
+	//Cryo Nitrogen dot toggles
 	$('#cryo-control-cab-dot').click(function() {
 		toggleCryoTab('#cryo-control-cab');
 	});
@@ -426,6 +461,60 @@ $(document).ready(function() {
 		$('#cryo-engine-content').css('opacity', '0');
 		$('#cryo-engine-content').css('z-index', '-1');
 		$('#cryo-engine-dot').css('background-color', 'white');
+
+		$(id + '-content').css('opacity', '1');
+		$(id + '-content').css('z-index', '20');
+		$(id + '-dot').css('background-color', '#e22828');
+	}
+
+	//Membrane Nitrogen dot toggles
+	$('#memb-control-cab-dot').click(function() {
+		toggleMembTab('#memb-control-cab');
+	});
+	$('#memb-tank-dot').click(function() {
+		toggleMembTab('#memb-tank');
+	});
+	$('#memb-engine-dot').click(function() {
+		toggleMembTab('#memb-engine');
+	});
+	$('#memb-filter-dot').click(function() {
+		toggleMembTab('#memb-filter');
+	});
+	$('#memb-booster-dot').click(function() {
+		toggleMembTab('#memb-booster');
+	});
+	$('#memb-deck-dot').click(function() {
+		toggleMembTab('#memb-deck');
+	});
+
+	function toggleMembTab(id) {
+		$('#memb-nitrogen-gas-content').css('opacity', '0');
+		$('#memb-nitrogen-gas-content').css('z-index', '-1');
+// 		$('#memb-control-cab-dot').css('background-color', 'white');
+
+		$('#memb-control-cab-content').css('opacity', '0');
+		$('#memb-control-cab-content').css('z-index', '-1');
+		$('#memb-control-cab-dot').css('background-color', 'white');
+
+		$('#memb-tank-content').css('opacity', '0');
+		$('#memb-tank-content').css('z-index', '-1');
+		$('#memb-tank-dot').css('background-color', 'white');
+
+		$('#memb-engine-content').css('opacity', '0');
+		$('#memb-engine-content').css('z-index', '-1');
+		$('#memb-engine-dot').css('background-color', 'white');
+
+		$('#memb-filter-content').css('opacity', '0');
+		$('#memb-filter-content').css('z-index', '-1');
+		$('#memb-filter-dot').css('background-color', 'white');
+
+		$('#memb-booster-content').css('opacity', '0');
+		$('#memb-booster-content').css('z-index', '-1');
+		$('#memb-booster-dot').css('background-color', 'white');
+
+		$('#memb-deck-content').css('opacity', '0');
+		$('#memb-deck-content').css('z-index', '-1');
+		$('#memb-deck-dot').css('background-color', 'white');
 
 		$(id + '-content').css('opacity', '1');
 		$(id + '-content').css('z-index', '20');
