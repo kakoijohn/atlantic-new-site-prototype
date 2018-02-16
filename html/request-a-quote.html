@@ -20,21 +20,13 @@
         $(document).ready(function() {
             //disable submit button
 			document.getElementById("submit-request-button").disabled = true;
-
-			//enable submit button from captcha response
-			function enableBtn(){
-				document.getElementById("submit-request-button").disabled = false;
-				console.log("Button Enabled.");
-			}
-
-			$(window).resize(function() {
-				console.log("resized");
-				console.log($(window).width());
-				console.log($(window).height());
-			});
-
-			
 		});
+		
+		//enable submit button from captcha response
+		function enableBtn() {
+			document.getElementById("submit-request-button").disabled = false;
+			console.log("Button Enabled.");
+		}
     </script>
 </head>
 
