@@ -68,13 +68,13 @@ $(document).ready(function() {
 		});
 	} else {
 		$('.about').click(function() {
-			window.location.replace("about.html");
+			window.location.replace("html/about.html");
 		});
 		$('.testing').click(function() {
-			window.location.replace("testing.html");
+			window.location.replace("html/testing.html");
 		});
 		$('.services').click(function() {
-			window.location.replace("services.html");
+			window.location.replace("html/services.html");
 		});
 		$('.maintenance').click(function() {
 			
