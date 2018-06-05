@@ -401,9 +401,13 @@ section {
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
 	body {
-		background-color: blue;
+		background-color: white;
+	
     }
 
+	.big-picture-banner {
+		display: none;
+	}
     .clear-banner-window {
     	display: none;
     }
