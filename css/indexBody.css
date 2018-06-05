@@ -376,11 +376,12 @@ section {
 	list-style: none;
     margin: 0;
     vertical-align: top;
-	display: inline-block;
+	padding-bottom: 10px;
 }
 
 .footer ul li {
-	float: left;
+	/*float: left;*/
+	display: inline-block;
 	border-right: 2px solid #ccc;
 	padding-left: 5px;
 	padding-right: 5px;

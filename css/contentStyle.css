@@ -533,7 +533,7 @@ iframe {
 		background-color: white;
 	
     }
-
+    
 	.big-picture-banner {
 		display: none;
 	}
@@ -569,5 +569,21 @@ iframe {
     .section-3-picture-container h1 {
     	font-size: 85px;
     }
-    
+    .second-section a h3 {
+    	width: 80%;
+    	font-size: x-large;
+    }
+    .secondary-heading h1 {
+    	font-size: xx-large;
+    	width: 100%;
+    }
+    .section-3-tetris-container {
+    	width: 91%;
+    }
+    .tetris-image h2 {
+    	font-size: 45px;
+    }
+    .footer {
+    	font-size: x-large;
+    }
 }
