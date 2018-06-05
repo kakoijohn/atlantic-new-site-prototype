@@ -45,26 +45,42 @@ $(document).ready(function() {
 		$('.full-window-graphic').height($(window).height());
 	});
 
-	$('.about').click(function() {
-		toggleMenu($('#about-menu'), '.about');
+	if ($(window).width > 992) {
+		$('.about').click(function() {
+			toggleMenu($('#about-menu'), '.about');
 		
-		closeOtherMenus($('#about-menu').attr('id'));
-	});
-	$('.testing').click(function() {
-		toggleMenu($('#testing-menu'), '.testing');
+			closeOtherMenus($('#about-menu').attr('id'));
+		});
+		$('.testing').click(function() {
+			toggleMenu($('#testing-menu'), '.testing');
 		
-		closeOtherMenus($('#testing-menu').attr('id'));
-	});
-	$('.services').click(function() {
-		toggleMenu($('#services-menu'), '.services');
+			closeOtherMenus($('#testing-menu').attr('id'));
+		});
+		$('.services').click(function() {
+			toggleMenu($('#services-menu'), '.services');
 
-		closeOtherMenus($('#services-menu').attr('id'));
-	});
-	$('.maintenance').click(function() {
-		toggleMenu($('#maintenance-menu'), '.maintenance');
+			closeOtherMenus($('#services-menu').attr('id'));
+		});
+		$('.maintenance').click(function() {
+			toggleMenu($('#maintenance-menu'), '.maintenance');
 
-		closeOtherMenus($('#maintenance-menu').attr('id'));
-	});
+			closeOtherMenus($('#maintenance-menu').attr('id'));
+		});
+	} else {
+		$('.about').click(function() {
+			window.location.replace("about.html");
+		});
+		$('.testing').click(function() {
+			window.location.replace("testing.html");
+		});
+		$('.services').click(function() {
+			window.location.replace("services.html");
+		});
+		$('.maintenance').click(function() {
+			
+		});
+	}
+	
 	
 	function closeOtherMenus(currentMenu) {
 		if (currentMenu != 'about-menu') {
