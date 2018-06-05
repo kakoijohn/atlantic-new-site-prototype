@@ -522,3 +522,41 @@ iframe {
 .request-quote-screen .exit-button a:hover {
 	color: red;
 }
+
+
+
+/* Mobile Configurations */
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+	body {
+		background-color: white;
+	
+    }
+
+	.big-picture-banner {
+		display: none;
+	}
+    .clear-banner-window {
+    	display: none;
+    }
+    .banner-text {
+    	display: none;
+    }
+    nav.primary-nav>ul>li>a {
+    	font-size: xx-large;
+    	margin-right: 25px;
+    }
+    nav.primary-nav a.logo {
+    	margin-left: 175px;
+    	width: 500px;
+    	height: 245px;
+    }
+    .heading-content p {
+    	max-width: 990px !important;
+    	padding: 25px;
+    }
+    .section-3-picture-container {
+    	width: 100%;
+    }
+}
