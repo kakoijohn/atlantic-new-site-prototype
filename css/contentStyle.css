@@ -172,6 +172,10 @@
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
+.heading-content ul li a {
+	color: #345182;
+}
+
 .heading-content ul li:hover {
 	box-shadow: 16px 16px 16px 0 rgba(0, 0, 0, 0.3), 0 7px 7px 0 rgba(0, 0, 0, 0.19);
 }
