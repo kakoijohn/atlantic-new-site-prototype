@@ -544,9 +544,13 @@ iframe {
     	display: none;
     }
     nav.primary-nav>ul>li>a {
-    	font-size: xx-large;
+    	font-size: 36px;
     	margin-right: 25px;
     }
+    .arrow-icon {
+    	display: none;
+    }
+
     nav.primary-nav a.logo {
     	margin-left: 175px;
     	width: 500px;
@@ -559,4 +563,11 @@ iframe {
     .section-3-picture-container {
     	width: 100%;
     }
+    .request-a-quote-button h2 {
+    	font-size: xx-large;
+    }
+    .section-3-picture-container h1 {
+    	font-size: 85px;
+    }
+    
 }
