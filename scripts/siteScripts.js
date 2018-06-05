@@ -67,17 +67,18 @@ $(document).ready(function() {
 			closeOtherMenus($('#maintenance-menu').attr('id'));
 		});
 	} else {
+		var relLink = "";
+		if (page == 'index.html') {
+			relLink = "html/";
+		}
 		$('.about').click(function() {
-			window.location.replace("html/about.html");
+			window.location.replace(relLink + "about.html");
 		});
 		$('.testing').click(function() {
-			window.location.replace("html/testing.html");
+			window.location.replace(relLink + "testing.html");
 		});
 		$('.services').click(function() {
-			window.location.replace("html/services.html");
-		});
-		$('.maintenance').click(function() {
-			
+			window.location.replace(relLink + "services.html");
 		});
 	}
 	
