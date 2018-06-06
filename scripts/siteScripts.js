@@ -114,8 +114,6 @@ $(document).ready(function() {
 			$(className).css('background', '');
 		}
 	}
-	
-	var prevScroll = $(document).scrollTop();
 
 	//menu bar transition / WOB Logo Transition
 	$(document).scroll(function() {
@@ -145,13 +143,6 @@ $(document).ready(function() {
 
 			$('.watch-video').css('z-index', 1);
 		}
-
-		//if the user tries to scroll the screen while the request a quote screen is up. stop the action.
-		if (requestQuoteVisible == true) {
-			$(document).scrollTop(prevScroll);
-		}
-
-		prevScroll = $(document).scrollTop();
 	});
 	
 	function setDisplay(disp) {
