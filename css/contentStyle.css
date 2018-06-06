@@ -648,4 +648,12 @@ iframe {
     .two-block-content .block .text p {
     	padding-right: 0;
     }
+
+    .employee-profile .block {
+    	display: block;
+    	width: 100%;
+    }
+    .employee-profile .block h2 {
+    	font-size: xx-large;
+    }
 }
