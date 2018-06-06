@@ -656,4 +656,11 @@ iframe {
     .employee-profile .block h2 {
     	font-size: xx-large;
     }
+
+    .image-fullscreen .inner-screen {
+    	margin-top: 10px !important;
+    }
+    .image-fullscreen .exit-button {
+    	margin-top: 68px !important;
+    }
 }
