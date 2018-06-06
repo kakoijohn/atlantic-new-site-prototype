@@ -607,4 +607,20 @@ iframe {
     .footer {
     	font-size: x-large;
     }
+
+
+    .main-heading .main-heading-overlay {
+    	padding: 70px;
+    }
+    .main-heading h1 {
+    	margin-top: 3%;
+    	left: 25%;
+    	width: 50%;
+    }
+    #mobile-service-heading-correction {
+		display: block !important;
+    }
+    #mobile-service-heading {
+    	display: block !important;
+    }
 }
