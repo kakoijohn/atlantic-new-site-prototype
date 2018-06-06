@@ -663,4 +663,8 @@ iframe {
     .image-fullscreen .exit-button {
     	margin-top: 68px !important;
     }
+
+    .request-quote-screen .inner-screen {
+    	margin-top: 10px;
+    }
 }

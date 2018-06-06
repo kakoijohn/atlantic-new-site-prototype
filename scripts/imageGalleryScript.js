@@ -172,18 +172,6 @@ $(document).ready(function() {
 			$('.exit-button a').css('opacity', 0);
 			$('.image-fullscreen .inner-screen').css('border-radius', '0');
 		});
-	
-	
-		var prevScroll = $(document).scrollTop();
-	
-		//scroll disable when image is fullscreen
-		$(document).scroll(function() {
-			if (imageFullscreenVisible == true) {
-				$(document).scrollTop(prevScroll);
-			}
-	
-			prevScroll = $(document).scrollTop();
-		});
 
 
 	});
