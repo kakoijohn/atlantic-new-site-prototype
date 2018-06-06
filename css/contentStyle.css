@@ -639,4 +639,13 @@ iframe {
     	min-width: 100%;
     	min-height: 300px;
     }
+    .two-block-content .block .text {
+    	position: relative;
+    }
+    .two-block-content .block .text h1 {
+    	padding-right: 0;
+    }
+    .two-block-content .block .text p {
+    	padding-right: 0;
+    }
 }
