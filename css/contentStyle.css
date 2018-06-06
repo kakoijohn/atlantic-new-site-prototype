@@ -533,7 +533,28 @@ iframe {
 		background-color: white;
 	
     }
-    
+
+    div.preheader {
+    	height: 50px;	
+    }
+    a.gplus {
+    	display: none !important;
+    }
+    a.linkedin {
+		display: none !important;
+    }
+    a.mail {
+    	display: none !important;
+    }
+    div.preheader .row .logo li:first-child a {
+    	height: 50px;
+    }
+    div.preheader .row .logo li a {
+    	font-size: x-large;
+    }
+    div.preheader .row ul li a {
+    	font-size: x-large;
+    }
 	.big-picture-banner {
 		display: none;
 	}
@@ -574,7 +595,7 @@ iframe {
     	font-size: x-large;
     }
     .secondary-heading h1 {
-    	font-size: xx-large;
+    	font-size: 60px;
     	width: 100%;
     }
     .section-3-tetris-container {
