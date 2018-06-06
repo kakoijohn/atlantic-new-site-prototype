@@ -11,7 +11,7 @@ $(document).ready(function() {
 	//make size of clear banner window the rest of the window height
 	$('.clear-banner-window').height($(window).height() - $('.content-start').position().top);
 	//set the preheader text for the logo the proper name based on window size.
-	if ($(window).width() < 930)
+	if ($(window).width() < 992)
 		$('.preheader-company-name').text('ANT');
 	else
 		$('.preheader-company-name').text('Atlantic Nitrogen & Testing');
@@ -27,7 +27,7 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		$('.clear-banner-window').height($(window).height() - $('.content-start').position().top);
 
-		if ($(window).width() < 930)
+		if ($(window).width() < 992)
 			$('.preheader-company-name').text('ANT');
 		else
 			$('.preheader-company-name').text('Atlantic Nitrogen & Testing');

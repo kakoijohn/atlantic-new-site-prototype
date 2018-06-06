@@ -580,6 +580,13 @@ iframe {
     .heading-content p {
     	max-width: 990px !important;
     	padding: 25px;
+    	margin: 0;
+    }
+    .heading-content ul {
+    	margin: 0;
+    	margin-left: 3%;
+    	margin-right: 3%;
+    	font-size: xx-large;
     }
     .section-3-picture-container {
     	width: 100%;
@@ -622,5 +629,14 @@ iframe {
     }
     #mobile-service-heading {
     	display: block !important;
+    }
+
+    .request-a-quote form {
+    	width: 700px;
+    }
+
+    .two-block-content .block {
+    	min-width: 100%;
+    	min-height: 300px;
     }
 }
