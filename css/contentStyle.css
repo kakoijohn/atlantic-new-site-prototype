@@ -675,4 +675,11 @@ iframe {
     	z-index: -1 !important; 
     	font-size: x-large !important;
     }
+    .request-a-quote-button-two-block h2 {
+    	font-size: xx-large !important;
+    }
+
+    .content-tab-menu {
+    	padding-bottom: 700px;
+    }
 }
