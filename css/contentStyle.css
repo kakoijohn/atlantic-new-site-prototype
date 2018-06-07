@@ -667,4 +667,10 @@ iframe {
     .request-quote-screen .inner-screen {
     	margin-top: 10px;
     }
+
+    .full-window-graphic .graphic .info {
+    	position: relative !important;
+    	width: 100% !important;
+    	background-color: transparent !important;
+    }
 }

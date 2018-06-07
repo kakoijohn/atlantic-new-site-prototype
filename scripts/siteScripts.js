@@ -45,42 +45,42 @@ $(document).ready(function() {
 		$('.full-window-graphic').height($(window).height());
 	});
 
-	if ($(window).width > 992) {
-		$('.about').click(function() {
+	
+	$('.about').click(function() {
+		if ($(window).width() > 992) {
 			toggleMenu($('#about-menu'), '.about');
-		
+	
 			closeOtherMenus($('#about-menu').attr('id'));
-		});
-		$('.testing').click(function() {
-			toggleMenu($('#testing-menu'), '.testing');
-		
-			closeOtherMenus($('#testing-menu').attr('id'));
-		});
-		$('.services').click(function() {
-			toggleMenu($('#services-menu'), '.services');
-
-			closeOtherMenus($('#services-menu').attr('id'));
-		});
-		$('.maintenance').click(function() {
-			toggleMenu($('#maintenance-menu'), '.maintenance');
-
-			closeOtherMenus($('#maintenance-menu').attr('id'));
-		});
-	} else {
-		var relLink = "";
-		if (page == 'index.html') {
-			relLink = "html/";
-		}
-		$('.about').click(function() {
+		} else {
+			var relLink = "";
+			if (page == 'index.html')
+				relLink = "html/";
 			window.location.replace(relLink + "about.html");
-		});
-		$('.testing').click(function() {
+		}
+	});
+	$('.testing').click(function() {
+		if ($(window).width() > 992) {
+			toggleMenu($('#testing-menu'), '.testing');
+	
+			closeOtherMenus($('#testing-menu').attr('id'));
+		} else {
+			var relLink = "";
+			if (page == 'index.html')
+				relLink = "html/";
 			window.location.replace(relLink + "testing.html");
-		});
-		$('.services').click(function() {
+		}
+	});
+	$('.services').click(function() {
+		if ($(window).width() > 992) {
+			toggleMenu($('#services-menu'), '.services');
+			closeOtherMenus($('#services-menu').attr('id'));
+		} else {
+			var relLink = "";
+			if (page == 'index.html')
+				relLink = "html/";
 			window.location.replace(relLink + "services.html");
-		});
-	}
+		}
+	});
 	
 	
 	function closeOtherMenus(currentMenu) {
