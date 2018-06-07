@@ -680,6 +680,6 @@ iframe {
     }
 
     .content-tab-menu {
-    	padding-bottom: 700px;
+    	padding-bottom: 700px !important;
     }
 }
